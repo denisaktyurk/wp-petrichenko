@@ -1,2 +1,3 @@
 # wp-petrichenko
-Wordpress theme made by Ivan petrichenko course on Udemy
+Wordpress theme based on Ivan Petrichenko course on Udemy
+Made on pure HTML + CSS
