@@ -125,7 +125,7 @@ img {
 .about-title__sub {
     color: #4a4a4a;
     font-size: 23px;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 .about-wrapper { 
@@ -155,7 +155,7 @@ img {
 
  .optimization-desc {
     max-width: 775px;
-    margin-left: auto;
+    margin-left: 33%;
  }
 
  .optimization-desc__title {
@@ -202,7 +202,6 @@ img {
 
 .finish__wrapper { 
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 .finish-item__circle {
@@ -293,4 +292,117 @@ img {
     text-decoration: underline;
 }
 
-.ftr__txt { }
+@media screen and (max-width: 768px) {
+
+    .btn {
+        padding: 19px 7px;
+        font-size: 14px;
+    }
+
+
+    .intro-logo {
+        margin-bottom: 24px;
+    }
+
+    .intro-title {
+        font-size: 20px;
+    }
+
+    .intro-txt {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+
+    .intro-title_big {
+        font-size: 40px;
+    }
+
+    .intro-btn {
+        margin-bottom: 35px;
+    }
+
+    .about, .optimization, .intensive, .date {
+        padding: 40px 0 20px 0;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-title__main, .finish__title, .optimization-desc__title, .date__title {
+        font-size: 18px;
+    }
+
+    
+    .about-title__sub {
+        font-size: 16px;    
+    }
+
+    .about-title__main::after, .finish__title::after {
+        margin: 9px auto;
+        height: 2px;
+    }
+
+    .about-item {
+        min-height: 0;
+    }
+
+    .about-item + .about-item {
+        margin-top: 20px;
+    }
+
+    .optimization {
+        min-height: 0;
+    }
+
+    
+    .optimization-desc {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .optimization-desc__text {
+        font-size: 16px;
+    }
+
+    .optimization-img {
+        display: none;
+    }
+
+
+    .finish__title {
+        margin-bottom: 20px;
+    }
+
+    .finish__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .finish-item + .finish-item {
+        margin-top: 15px;
+    }
+
+    .finish-item__circle {
+        margin-bottom: 5px;
+    }
+
+    .intensive-img {
+        margin-bottom: 10px;
+    }
+
+    .intensive-txt {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .date__big {
+        font-size: 20px;
+    }
+
+    .date-txt {
+        font-size: 16px;
+    }
+}
